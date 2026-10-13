@@ -1,5 +1,7 @@
 # Implicit Velocity Projection (IP)
 
+![Implicit Velocity Projection](assets/teaser.jpg)
+
 Demo code for **Implicit Velocity Projection (IP)**, Kee et al., SIGGRAPH Asia 2026.
 
 IP enforces the incompressibility of SPH fluids in velocity space. In each outer iteration it solves one implicit linear system for a velocity correction, using a matrix-free conjugate gradient (CG) solver on the GPU. This repository contains IP in a GPU SPH simulator built on [NVIDIA Warp](https://github.com/NVIDIA/warp), with an interactive viewer. Standard pressure solvers are included for side-by-side comparison.
