@@ -11,6 +11,7 @@ numpy>=2.4.1,<3
 trimesh>=4.11.1,<5
 scipy>=1.17.0          # required: mesh.voxelized(...).fill() calls scipy.ndimage
 networkx>=3.6.1        # trimesh graph ops (repair.fill_holes, connected components)
+pillow>=12.1.0         # required: trimesh reads OBJ materials (.mtl) through PIL
 
 # --- interactive GUI (python -m scripts.main) ---
 pyglet>=2.1.13         # window + GL context for warp.render.OpenGLRenderer
