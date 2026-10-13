@@ -1,0 +1,61 @@
+{
+	"Configuration":
+	{
+        "domainStart": [0.0, 0.0, 0.0],
+        "domainEnd": [6.0, 8.0, 8.0],
+		"timeStepSize": 0.006,
+		"particleRadius": 0.03,
+		"density0": 1000,
+		"gravitation": [0.0, -9.81, 0.0],
+		"transparentObjects": [1],
+		"viscosityMethod": 1,
+        "viscosityCoeff": 0.1,
+        "surfaceTensionMethod": 1,
+        "surfaceTensionCoeff": 0.1,
+		"pressureMethod": 1,
+        "densityErrorTol": 1e-3
+	},
+
+	"FluidBodies": [
+	
+		{
+            "objectId": 0,
+			"geometryFile": "./data/models/dambreakFluidBody.obj",
+			"translation": [3.0, 1.5, 6.3],
+			"rotationAxis": [0, 1, 0],
+			"rotationAngle": 0,
+			"scale": [1.2, 1.0, 1.1],
+			"velocity": [0.0, 0.0, 0.0],
+			"density": 1000.0,
+			"color": [10, 100, 200, 1.0]
+		}
+	],
+
+	"RigidBodies" : [
+		{
+			"objectId": 1,
+			"geometryFile": "./data/models/dambreakbox_thick.obj",
+			"translation": [3.0, 0.4, 4.0],
+			"rotationAxis": [0, 1, 0],
+			"rotationAngle": 0,
+			"scale": [2.0, 1.5, 1.2],
+			"velocity": [0.0, 0.0, 0.0],
+			"density": 1000.0,
+			"color": [255, 255, 255, 1.0],
+			"isDynamic": false
+		},
+
+		{
+			"objectId": 2,
+			"geometryFile": "./data/models/dragon.obj",
+			"translation": [3.0, 0.65, 2.5],
+			"rotationAxis": [0, 1, 0],
+			"rotationAngle": 90,
+			"scale": [1.8, 1.8, 1.8],
+			"velocity": [0.0, 0.0, 0.0],
+			"density": 1000.0,
+			"color": [255, 255, 255, 1.0],
+			"isDynamic": false
+		}
+    ]
+}

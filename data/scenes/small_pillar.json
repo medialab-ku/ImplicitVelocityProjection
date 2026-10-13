@@ -1,0 +1,49 @@
+{
+	"Configuration":
+	{
+        "domainStart": [0.0, 0.0, 0.0],
+        "domainEnd": [2.0, 25.0, 2.0],
+		"particleRadius": 0.02,
+		"density0": 1000,
+		"gravitation": [0.0, -9.81, 0.0],
+		"timeStepSize": 0.002,
+        "transparentObjects": [1],
+        "viscosityMethod": 1,
+        "viscosityCoeff": 0.1,
+        "surfaceTensionMethod": 1,
+        "surfaceTensionCoeff": 0.1,
+		"pressureMethod": 1,
+        "densityErrorTol": 1e-3,
+        "omega": 10,
+        "tol_pcg": 1e-6
+	},
+
+	"FluidBlocks":
+    [
+        {
+            "objectId": 0,
+            "start": [0.9, 3.0, 0.9],
+            "end": [1.1, 12.0, 1.1],
+            "translation": [0, 0, 0],
+            "scale": [1, 1, 1],
+            "velocity": [0.0, 0.0, 0.0],
+            "density": 1000.0,
+            "color": [10, 100, 200]
+        }
+    ],
+    
+    "RigidBodies" : [
+        {
+            "objectId": 1,
+            "geometryFile": "./data/models/box.obj",
+            "translation": [1.0, -6.5, 1.0],
+            "rotationAxis": [0, 0, 1],
+            "rotationAngle": 0,
+            "scale": [0.4, 8.0, 0.4],
+            "velocity": [0.0, 0.0, 0.0],
+            "density": 1000.0,
+            "color": [255, 255, 255, 1.0],
+            "isDynamic": false
+        }
+    ]
+}

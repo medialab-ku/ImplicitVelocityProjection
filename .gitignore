@@ -1,0 +1,9 @@
+__pycache__
+.venv/
+venv/
+
+data/models/
+.cursor/
+.claude/
+.idea/
+.serena/

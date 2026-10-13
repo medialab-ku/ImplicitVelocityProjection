@@ -1,0 +1,90 @@
+{
+	"Configuration":
+	{
+        "gravitation": [0.0, -9.81, 0.0],
+		"timeStepSize": 0.004,
+        "domainStart": [0.0, 0.0, 0.0],
+        "domainEnd": [5.0, 25.2, 5.0],
+		"particleRadius": 0.03,
+		"density0": 1000,
+        "transparentObjects": [2],
+        "pressureMethod": 1,
+        "omega": 10,
+        "tol_pcg": 1e-6,
+        "viscosityMethod": 1,
+        "viscosityCoeff": 0.05,
+        "surfaceTensionMethod": 1,
+        "surfaceTensionCoeff": 500.0
+
+	},
+
+    "RigidBodies" : [
+        {
+            "objectId": 2,
+            "geometryFile": "./data/models/boxTallThick2_B.obj",
+            "translation": [2.5, 0.2, 2.5],
+            "rotationAxis": [0, 0, 1],
+            "rotationAngle": 0,
+            "scale": [4.0, 3.0, 4.0],
+            "velocity": [0.0, 0.0, 0.0],
+            "density": 1000.0,
+            "color": [255, 255, 255, 1.0],
+            "isDynamic": false
+        }
+    ],
+
+
+    "ScheduledSpawns": 
+    [
+        {
+            "objectId": 10,
+            "geometryFile": "./data/models/dragon.obj",
+            "translation": [1.8, 9.0, 1.8],
+            "scale": [2.0, 2.0, 2.0],
+            "spawnNum": 25,
+            "startTime": 1.0,
+            "interval": 0.5,
+            "velocity": [0, -1.5, 0],
+            "density": 1000.0,
+            "color": [10, 100, 200]
+        },
+        
+        {
+            "objectId": 40,
+            "geometryFile": "./data/models/dragon.obj",
+            "translation": [3.2, 9.0, 3.2],
+            "scale": [2.0, 2.0, 2.0],
+            "spawnNum": 25,
+            "startTime": 1.0,
+            "interval": 0.5,
+            "velocity": [0, -1.5, 0],
+            "density": 1000.0,
+            "color": [230, 200, 60]
+        },
+
+        {
+            "objectId": 70,
+            "geometryFile": "./data/models/box.obj",
+            "translation": [2.5, 2.0, 2.5],
+            "scale": [2.2, 5.0, 2.2],
+            "material": "rigid",
+            "isDynamic": false,
+            "startTime": 14.0,
+            "velocity": [0, 0, 0],
+            "density": 1000.0,
+            "color": [180, 180, 180],
+            "Animation": {
+                "tracks": [
+                    {
+                        "channels": {
+                            "translation": [
+                                { "t": 16.5, "value": [0.0, 0.0, 0.0] },
+                                { "t": 17.5, "value": [0.0, -5.0, 0.0] }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
